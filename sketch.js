@@ -12,13 +12,13 @@ let label = "";
 //Moving sprites
 let text1= "";
 let v0x = 730;
-let v0y=140;
+let v0y=340;
 let v2x = 460;
 let start = false;
 let angle = 0;
 let angle2 = 0;
 var mainbodyx=942;
-var mainbodyy=209;
+var mainbodyy=409;
 var compare = false;
 var speed1 = 3;
 var ghost, circle1;
@@ -30,7 +30,7 @@ function preload() {
 
 function setup() {
   
-  bg = loadImage('background.png');
+  bg = loadImage('background-1.png');
   
   createCanvas(windowWidth, 800);
   
@@ -62,7 +62,7 @@ rightarm.addAnimation('floating', 'rightarm.png');
    leftarm2.addAnimation('floating', 'leftarm2.png');
   
   
-  enemy = createSprite(250,300);
+  enemy = createSprite(250,500);
 enemy.addAnimation('floating', 'enemy2.png');
   
   
@@ -109,7 +109,7 @@ function draw() {
 
   clear()
 background(bg);
-    //image(flippedVideo, 0, 0);
+    image(flippedVideo, 0, 0);
 
   // Draw the label
   fill(255);
@@ -122,7 +122,7 @@ background(bg);
   
  let v0 = createVector(v0x, v0y);
   let v1 = createVector(-400, -50);
-  let v2 = createVector(v2x, 200);
+  let v2 = createVector(v2x, 400);
   let v3 = createVector(400, -20);
   
   drawArrow(v0, v1.rotate(angle), 'white');
