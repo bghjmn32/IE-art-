@@ -204,7 +204,7 @@ leftleg.position.y= leftleg.position.y+2;
       }
       
     }
-    if(text1 == "Right win"){
+    if(text1 == "Right Win"){
       if(mainbody.position.x>850){
         mainbody.position.x= mainbody.position.x-5;
 leftarm.position.x= leftarm.position.x-5;
